@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Checkout - ShopEase</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <h1 class="logo">ShopEase</h1>
+
+        <a href="cart.html">Back to Cart</a>
+      </div>
+    </header>
+
+    <section class="products-section">
+      <div class="section-heading">
+        <h2>Checkout</h2>
+        <p>Complete Your Order</p>
+      </div>
+
+      <div class="checkout-container">
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+
+          <p>
+            Total Products:
+            <span id="checkoutTotalItems">0</span>
+          </p>
+
+          <h3>
+            Total Amount: ₹
+            <span id="checkoutTotalPrice">0.00</span>
+          </h3>
+        </div>
+
+        <h3>Delivery Information</h3>
+
+        <form id="checkoutForm">
+          <input type="text" id="fullName" placeholder="Full Name" required />
+
+          <input type="email" id="email" placeholder="Email Address" required />
+
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number"
+            pattern="[0-9]{10}"
+            maxlength="10"
+            required
+          />
+
+          <textarea id="address" placeholder="Full Address" required></textarea>
+
+          <input type="text" id="city" placeholder="City" required />
+
+          <input
+            type="text"
+            id="pincode"
+            placeholder="PIN Code"
+            pattern="[0-9]{6}"
+            maxlength="6"
+            required
+          />
+
+          <button type="submit" class="add-to-cart">Place Order</button>
+        </form>
+      </div>
+    </section>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

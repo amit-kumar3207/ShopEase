@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="ShopEase - Online Shopping Website" />
+
+    <title>ShopEase | Online Shopping</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+      <p>Free Shipping on Orders Above ₹999</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">ShopEase</a>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-box">
+          <input
+            type="search"
+            placeholder="Search products..."
+            id="productSearch"
+          />
+
+          <button type="button" id="searchBtn">Search</button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-actions">
+          <a href="wishlist.html">
+            Wishlist
+            <span id="wishlistCount">0</span>
+          </a>
+
+          <a href="cart.html">
+            Cart
+            <span id="cartCount">0</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Banner -->
+      <section class="hero">
+        <div class="hero-content">
+          <p class="hero-subtitle">WELCOME TO SHOPEASE</p>
+
+          <h1>
+            Discover Amazing
+            <span>Products & Deals</span>
+          </h1>
+
+          <p class="hero-description">
+            Explore the latest products at amazing prices. Find everything you
+            need in one place.
+          </p>
+
+          <a href="#products" class="hero-btn"> Shop Now </a>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=700"
+            alt="Online shopping offers"
+          />
+        </div>
+      </section>
+
+      <!-- Shop By Categories Section -->
+
+      <section class="categories-section">
+        <div class="section-heading">
+          <h2>Shop By Categories</h2>
+
+          <p>Explore our wide range of products</p>
+        </div>
+
+        <div class="categories-grid">
+          <div class="category-card" data-category="electronics">
+            <div class="category-icon electronics">📱</div>
+            <h3>Electronics</h3>
+            <p>Latest Gadgets</p>
+          </div>
+
+          <div class="category-card" data-category="clothing">
+            <div class="category-icon fashion">👕</div>
+            <h3>Fashion</h3>
+            <p>Trendy Collection</p>
+          </div>
+
+          <div class="category-card" data-category="jewelery">
+            <div class="category-icon jewellery">💍</div>
+            <h3>Jewellery</h3>
+            <p>Beautiful Designs</p>
+          </div>
+
+          <div class="category-card" data-category="all">
+            <div class="category-icon accessories">🛍️</div>
+            <h3>All Products</h3>
+            <p>Explore Everything</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products Section -->
+
+      <section class="products-section" id="products">
+        <!-- Section Heading -->
+        <div class="section-heading">
+          <h2>Featured Products</h2>
+
+          <p>Discover our popular products</p>
+        </div>
+
+        <!-- Product Sorting -->
+        <div class="product-sorting">
+          <label for="sortProducts">Sort By:</label>
+
+          <select id="sortProducts">
+            <option value="default">Default</option>
+            <option value="low-to-high">Price: Low to High</option>
+            <option value="high-to-low">Price: High to Low</option>
+          </select>
+        </div>
+
+        <!-- Products Container -->
+        <div class="products-grid" id="productsContainer">
+          <p class="loading-message">Loading products...</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
