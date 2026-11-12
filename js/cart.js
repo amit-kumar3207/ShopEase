@@ -139,6 +139,7 @@ function updateQuantity(index, action) {
 
   // Refresh Cart
   displayCart();
+}
 // QUANTITY BUTTON EVENTS
 
 document
