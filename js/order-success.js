@@ -17,7 +17,12 @@ if (orderDetails) {
   ).toFixed(2);
 
   // Display Order Date
-  document.getElementById("orderDate").textContent = orderDetails.orderDate;
+ document.getElementById("orderDate").textContent =
+  new Date(orderDetails.orderDate).toLocaleString("en-IN", {
+    timeZone: "Asia/Kolkata",
+    dateStyle: "medium",
+    timeStyle: "short"
+  });
 } else {
   document.querySelector(".order-details").innerHTML =
     "<p>No order details found.</p>";

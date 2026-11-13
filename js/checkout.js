@@ -78,7 +78,7 @@ checkoutForm.addEventListener("submit", async function (event) {
     products: cart,
     totalItems: totalItems,
     totalPrice: totalPrice,
-    orderDate: new Date().toISOString(),
+    orderDate: new Date(),
     status: "Pending",
   };
 
